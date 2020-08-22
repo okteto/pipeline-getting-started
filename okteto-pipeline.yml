@@ -1,6 +1,3 @@
-icon: https://github.com/okteto/go-getting-started/raw/master/icon.png
 deploy:
   - okteto build -t okteto.dev/hello-world:latest
   - kubectl apply -f k8s
-devs:
-  - okteto.yml
