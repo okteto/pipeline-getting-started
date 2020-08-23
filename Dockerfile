@@ -1,4 +1,4 @@
-FROM golang:alpine as builder
+FROM golang:buster
 RUN apk --update --no-cache add bash
 WORKDIR /app
 ADD . .
