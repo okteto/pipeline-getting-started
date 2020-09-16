@@ -1,3 +1,4 @@
 deploy:
   - okteto build -t okteto.dev/hello-world:latest
   - kubectl apply -f k8s
+  - echo "deployed an application for $OKTETO_USER_NAME, $OKTETO_USER_ID, $OKTETO_USER_EMAIL"
